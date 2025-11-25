@@ -350,3 +350,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     });
 });
+
+// Handle window resize untuk optimization mobile
+window.addEventListener('resize', function() {
+    const heroStats = document.querySelector('.hero-stats');
+    if (window.innerWidth <= 480) {
+        heroStats.style.flexDirection = 'row';
+        heroStats.style.flexWrap = 'wrap';
+    }
+});
+
+// Initialize pada load
+window.addEventListener('load', function() {
+    if (window.innerWidth <= 480) {
+        const heroStats = document.querySelector('.hero-stats');
+        heroStats.style.flexDirection = 'row';
+        heroStats.style.flexWrap = 'wrap';
+    }
+});
