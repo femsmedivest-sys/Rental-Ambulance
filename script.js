@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Array gambar untuk hero section
     const heroImages = [
-        'Ambulance_1.jpg',
-        'Ambulance_2.jpg',
-        'Ambulance_3.jpg'
+        'Ambulance_1.webp',
+        'Ambulance_2.webp',
+        'Ambulance_3.webp'
     ];
     
     let currentImageIndex = 0;
